@@ -1,4 +1,4 @@
-from conflicts.detect_conflicts import detect_conflicts
+from detect_conflicts import detect_conflicts
 
 
 def test_observation_conflict():

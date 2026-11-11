@@ -12,16 +12,16 @@ import json
 from pathlib import Path
 import sys
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
+PROJECT_ROOT = Path(__file__).resolve().parent
 
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from validation.validate_evidence import validate_record
-from duplicates.detect_duplicates import detect_duplicates
-from conflicts.detect_conflicts import detect_conflicts
-from matching.drug_matcher import match_drug
-from review.human_review import (
+from validate_evidence import validate_record
+from detect_duplicates import detect_duplicates
+from detect_conflicts import detect_conflicts
+from drug_matcher import match_drug
+from human_review import (
     review_for_validation,
     review_for_conflict,
     review_for_matching
@@ -279,11 +279,7 @@ def save_output(output, output_file):
 
 if __name__ == "__main__":
 
-    input_file = (
-        "normalized_data/"
-        "normalized_evidence.json"
-    )
-
+    input_file = "normalized_evidence.json"
     output_file = (
         "integration/"
         "integrated_evidence_output.json"

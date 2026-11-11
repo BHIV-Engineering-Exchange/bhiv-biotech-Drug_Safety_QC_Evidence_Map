@@ -1,4 +1,4 @@
-from review.human_review import (
+from human_review import (
     create_review_flag,
     review_for_validation,
     review_for_conflict,

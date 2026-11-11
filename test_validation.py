@@ -1,6 +1,6 @@
-from validation.validate_evidence import validate_record
-from duplicates.detect_duplicates import detect_duplicates
-from conflicts.detect_conflicts import detect_conflicts
+from validate_evidence import validate_record
+from detect_duplicates import detect_duplicates
+from detect_conflicts import detect_conflicts
 
 
 def complete_record():
@@ -94,8 +94,8 @@ def test_09_missing_provenance():
 
     assert result["validation_status"] == "INVALID"
     assert "MISSING_PROVENANCE" in result["validation_errors"]
-    from duplicates.detect_duplicates import detect_duplicates
-from conflicts.detect_conflicts import detect_conflicts
+    from detect_duplicates import detect_duplicates
+from detect_conflicts import detect_conflicts
 
 
 def test_03_duplicate_evidence_id():

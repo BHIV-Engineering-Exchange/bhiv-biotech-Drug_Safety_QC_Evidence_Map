@@ -1,5 +1,5 @@
-from duplicates.detect_duplicates import detect_duplicates
-from conflicts.detect_conflicts import detect_conflicts
+from detect_duplicates import detect_duplicates
+from detect_conflicts import detect_conflicts
 
 
 def test_day1_duplicate_and_conflict_detection():

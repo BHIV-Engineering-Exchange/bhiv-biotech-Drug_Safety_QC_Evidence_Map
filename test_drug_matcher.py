@@ -1,4 +1,4 @@
-from matching.drug_matcher import match_drug
+from drug_matcher import match_drug
 
 
 def test_exact_match_drug_a():

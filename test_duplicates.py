@@ -1,4 +1,4 @@
-from duplicates.detect_duplicates import detect_duplicates
+from detect_duplicates import detect_duplicates
 
 
 def test_duplicate_source_identifier():
